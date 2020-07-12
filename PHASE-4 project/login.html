@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+    <head>
+        <div class="user">
+        <link rel="stylesheet" type="text/css" href="css/login.css" />
+        <title> login </title>
+        <title>DO  yOU WANT TAKE QUIZ???</title>
+      
+    </head>
+<body>
+    
+    <div class="login" >
+        <h1 >LOGIN</h1>
+        <form  class="form" action="index.html"method="post">
+            <div class="form-group" >
+            <label for="username" class="form-info">Username:</label><br>
+            <input type="text" name="username" id="username" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="password" class="form-info">Password:</label><br>
+            <input type="text" name="password" id="password" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="remember-me" class="form-info"><span>Remember me</span> 
+                <span><input id="always remember-me" name="always remember-me" type="checkbox"></span></label><br>
+            <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+        </div>
+        <p id="demo"></p>
+        <script>
+            var text = '{"user":[' +
+            '{"username":"pooja","password":"12345" }]}';
+            
+            obj = JSON.parse(text);
+            document.getElementById("demo").innerHTML =
+            obj.user[1].userame + " " + obj.user[1].password;
+            </script>
+            </p>
+       
+    
+
+
+
+
+
+</form>
+</div>
+           
+</div>
+
+</body>
+</html>
